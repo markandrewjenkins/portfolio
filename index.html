@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Portfolio</title>
+  <title>Mark Jenkins | Data & AI Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f7f7;
+    }
+    header {
+      background: #0b3954;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 6px;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #0b3954;
+      font-size: 1.3rem;
+    }
+    .project-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .project-list li {
+      margin-bottom: 1.5rem;
+    }
+    .project-title {
+      font-weight: 600;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #0b3954;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-right: 4px;
+    }
+    a {
+      color: #0b3954;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem 0 2rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello!</h1>
-  <p>My portfolio site is under construction.</p>
+
+<header>
+  <h1>Mark Andrew Jenkins</h1>
+  <p>Data Analyst · Power BI · AI & Automation</p>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am a data and analytics professional based in Toronto, focused on building decision-ready dashboards,
+      automation workflows, and AI-assisted tools. This portfolio highlights selected Power BI reports,
+      data products, and AI experiments.
+    </p>
+  </section>
+
+  <section id="projects-bi">
+    <h2>Power BI Projects</h2>
+    <ul class="project-list">
+      <li>
+        <div class="project-title">Sample Sales Performance Dashboard</div>
+        <span class="tag">Power BI</span>
+        <span class="tag">DAX</span>
+        <p>
+          End-to-end dashboard showing revenue, margin, and regional performance with drill-through into product
+          and customer segments.
+        </p>
+        <!-- Replace the link below when your first report is public -->
+        <p><a href="#">View dashboard (coming soon)</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects-ai">
+    <h2>AI & Automation Projects</h2>
+    <ul class="project-list">
+      <li>
+        <div class="project-title">Example AI Trading or Insights Assistant</div>
+        <span class="tag">AI</span>
+        <span class="tag">Python</span>
+        <p>
+          Prototype assistant to analyze market data, summarize key signals, and surface insights that
+          complement traditional technical analysis.
+        </p>
+        <!-- Replace the link below with a real demo or repo -->
+        <p><a href="#">View project (coming soon)</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+      GitHub: <a href="https://github.com/markandrewjenkins">github.com/markandrewjenkins</a><br>
+      LinkedIn: <a href="#">Add your LinkedIn URL</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Mark Andrew Jenkins
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
